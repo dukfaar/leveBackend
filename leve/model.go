@@ -11,6 +11,8 @@ type Model struct {
 	Name    string        `json:"name,omitempty" bson:"name,omitempty"`
 	Level   int32         `json:"level,omitempty" bson:"level,omitempty"`
 	Xp      int32         `json:"xp,omitempty" bson:"xp,omitempty"`
+	Class   string        `json:"class,omitempty" bson:"class,omitempty"`
+	Gil     int32         `json:"gil,omitempty" bson:"gil,omitempty"`
 }
 
 var GraphQLType = `
@@ -20,6 +22,8 @@ type Leve {
 	name: String
 	level: Int
 	xp: Int
+	class: String
+	gil: Int
 }
 ` +
 	relay.GenerateConnectionTypes("Leve")

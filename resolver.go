@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/dukfaar/goUtils/permission"
 	"github.com/dukfaar/goUtils/relay"
 	"github.com/dukfaar/leveBackend/leve"
 )
@@ -79,10 +80,10 @@ func (r *Resolver) Leve(ctx context.Context, args struct {
 }
 
 func (r *Resolver) ImportLeves(ctx context.Context) (*bool, error) {
-	/*err := permission.Check(ctx, "mutation.ImportLeves")
+	err := permission.Check(ctx, "mutation.importLeves")
 	if err != nil {
 		return nil, err
-	}*/
+	}
 
 	leveListResponse, err := http.Get("https://api.xivdb.com/leve?columns=id")
 

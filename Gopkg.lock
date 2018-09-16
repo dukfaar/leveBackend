@@ -19,7 +19,19 @@
     "relay",
     "service"
   ]
-  revision = "29568234700b81b5ba91da828418dd80bd02e348"
+  revision = "0e934adea3c017f52d39526e5e7c43158278846d"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/globalsign/mgo"
+  packages = [
+    ".",
+    "bson",
+    "internal/json",
+    "internal/sasl",
+    "internal/scram"
+  ]
+  revision = "1ca0a4f7cbcbe61c005d1bd43fdd8bb8b71df6bc"
 
 [[projects]]
   name = "github.com/golang/protobuf"
@@ -36,8 +48,8 @@
 [[projects]]
   name = "github.com/gorilla/websocket"
   packages = ["."]
-  revision = "3ff3320c2a1756a3691521efc290b4701575147c"
-  version = "v1.3.0"
+  revision = "66b9c49e59c6c48f0ffce28c2d8b8a5678502c6d"
+  version = "v1.4.0"
 
 [[projects]]
   branch = "master"
@@ -122,23 +134,11 @@
   branch = "master"
   name = "golang.org/x/net"
   packages = ["context"]
-  revision = "faa378e6dbaed88bd8100f8bcf09939375c6e8fa"
-
-[[projects]]
-  branch = "v2"
-  name = "gopkg.in/mgo.v2"
-  packages = [
-    ".",
-    "bson",
-    "internal/json",
-    "internal/sasl",
-    "internal/scram"
-  ]
-  revision = "9856a29383ce1c59f308dd1cf0363a79b5bef6b5"
+  revision = "26e67e76b6c3f6ce91f7c52def5af501b4e0f3a2"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "adfc3ced61021e33d808e447934a62b5499ea8fa40217fed2bc8f6af0185bcf0"
+  inputs-digest = "1eadb5579dcbe70312c91d28de1f913ec5fc024af3f101d242a1508ff83bfb43"
   solver-name = "gps-cdcl"
   solver-version = 1

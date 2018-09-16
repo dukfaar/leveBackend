@@ -13,7 +13,7 @@ import (
 	"github.com/dukfaar/goUtils/permission"
 	"github.com/dukfaar/leveBackend/leve"
 
-	"gopkg.in/mgo.v2"
+	"github.com/globalsign/mgo"
 
 	"github.com/gorilla/websocket"
 
